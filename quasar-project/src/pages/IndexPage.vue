@@ -221,6 +221,12 @@ export default defineComponent({
   width: 33%;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .flex-item{
+    width: 100%;
+  }
+}
+
 .td{
   padding: 20px;
 }

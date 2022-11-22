@@ -5,7 +5,7 @@
       <q-toolbar>
         <q-toolbar-title>
 
-          <q-tabs class="q-ml-xl text-black" align="left">
+          <q-tabs class="q-ml-xl text-black qtabs" align="left">
             <q-route-tab to="/" label="Startseite"/>
             <q-route-tab to="/impressum" label="Impressum"/>
           </q-tabs>
@@ -328,6 +328,11 @@ export default {
   color: #b176ff;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .qtabs{
+    margin-left: 0;
+  }
+}
 
 .fontsize-8 {
   font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1800 - 300))) !important;
